@@ -31,10 +31,17 @@ public class d8_atm_ornegi {
 		case 3:
 			System.out.println("Çekmek istediğiniz tutarı giriniz: ");
 			int tutar2 = scan.nextInt();
+			
+			if (tutar2 > bakiye) {
+				System.out.println("Yetersiz bakiye.");
+			}
+			else {
 			System.out.println("İşleminiz başarı ile gerçekleştirildi. \n Güncel bakiyeniz: "+ (bakiye-tutar2));
-			break;
+			break;				
+			}
 		case 4: 
 			System.out.println("Sistemden başarı ile çıktınız.");
+			break;
 		}
 	}
 }
