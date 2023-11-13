@@ -15,5 +15,20 @@ public class d9 {
 			a = a-1;
 			System.out.println(factorial);
 		}
-	}
+	
+
+	// Rest of the codes are doing the same thing with for loop
+
+		System.out.print("Input a number: ");
+		int a= scan.nextInt();
+		int k = a;
+		int factorial = 1;
+		
+		for(;a>=1;a--) {
+			factorial *=a;
+			
+		}
+		System.out.println(k + " sayısının faktörieli: " + factorial);
+	
+	}	
 }
